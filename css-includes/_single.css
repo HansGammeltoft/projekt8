@@ -6,6 +6,48 @@ section .single-wrapper {
   section .single-wrapper p img {
     width: 100% !important;
     height: auto; }
+  section .single-wrapper .comment-respond {
+    width: 100%; }
+    section .single-wrapper .comment-respond .comment-form .comment-form-comment, section .single-wrapper .comment-respond .comment-form .comment-form-author, section .single-wrapper .comment-respond .comment-form .comment-form-email {
+      display: flex;
+      flex-wrap: wrap; }
+      section .single-wrapper .comment-respond .comment-form .comment-form-comment label, section .single-wrapper .comment-respond .comment-form .comment-form-author label, section .single-wrapper .comment-respond .comment-form .comment-form-email label {
+        width: 100%; }
+      section .single-wrapper .comment-respond .comment-form .comment-form-comment textarea, section .single-wrapper .comment-respond .comment-form .comment-form-author textarea, section .single-wrapper .comment-respond .comment-form .comment-form-email textarea {
+        width: 100%;
+        border: 1px solid #ddd; }
+      section .single-wrapper .comment-respond .comment-form .comment-form-comment input, section .single-wrapper .comment-respond .comment-form .comment-form-author input, section .single-wrapper .comment-respond .comment-form .comment-form-email input {
+        width: 100%;
+        border: 1px solid #ddd; }
+    section .single-wrapper .comment-respond .comment-form .form-submit input {
+      border: 1px solid #ddd;
+      width: 100%;
+      padding: 10px 0; }
+    section .single-wrapper .comment-respond .comment-form .comment-form-url {
+      display: none; }
+    section .single-wrapper .comment-respond .comment-form .comment-form-cookies-consent {
+      display: flex; }
+      section .single-wrapper .comment-respond .comment-form .comment-form-cookies-consent label {
+        padding-left: 10px; }
+  section .single-wrapper #comments {
+    width: 100%;
+    padding-bottom: 30px;
+    font-size: 20px;
+    font-weight: 600; }
+  section .single-wrapper .commentlist {
+    width: 100%;
+    font-size: 0;
+    padding: 0; }
+    section .single-wrapper .commentlist .comment {
+      background: #F5F5F5;
+      border-radius: 5px; }
+      section .single-wrapper .commentlist .comment .comment-body {
+        width: 100%;
+        margin-bottom: 30px;
+        font-size: 16px; }
+        section .single-wrapper .commentlist .comment .comment-body .comment-author .avatar {
+          height: 32px;
+          width: 32px; }
 section .single-wrapper-img {
   width: 100%; }
 @media only screen and (max-width: 992px) {

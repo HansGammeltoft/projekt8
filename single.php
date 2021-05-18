@@ -17,6 +17,7 @@
   <!--wordpress text editor-->
   <?php if(have_posts()) : while(have_posts()) : the_post();?>
     <?php the_content();?>
+    <?php comments_template() ?>
   <?php endwhile; else: endif;?>
   </div>
   <h2 class="related-posts-header col-12 col-sm-12 col-md-12 col-lg-12">Relaterede blogindlæg:</h2>

@@ -14,6 +14,73 @@ section {
         height: auto;
       }
     }
+    .comment-respond {
+      width: 100%;
+      .comment-reply-title {
+      }
+      .comment-form {
+        .logged-in-as {
+
+        }
+        .comment-form-comment, .comment-form-author, .comment-form-email {
+          display: flex;
+          flex-wrap: wrap;
+          label {
+            width: 100%;
+          }
+          textarea {
+            width: 100%;
+            border: 1px solid #ddd;
+          }
+          input {
+            width: 100%;
+            border: 1px solid #ddd;
+          }
+        }
+        .form-submit {
+          input {
+            border: 1px solid #ddd;
+            width: 100%;
+            padding: 10px 0;
+          }
+        }
+        .comment-form-url {
+          display: none;
+        }
+        .comment-form-cookies-consent {
+          display: flex;
+          label {
+            padding-left: 10px;
+          }
+        }
+      }
+    }
+    #comments {
+      width: 100%;
+      padding-bottom: 30px;
+      font-size: 20px;
+      font-weight: 600;
+    }
+    .commentlist {
+      width: 100%;
+      font-size: 0;
+      padding: 0;
+      .comment {
+        background: #F5F5F5;
+        border-radius: 5px;
+        .comment-body {
+          width: 100%;
+          margin-bottom: 30px;
+          font-size: 16px;
+          .comment-author {
+            .avatar  {
+              height: 32px;
+              width: 32px;
+            }
+          }
+        }
+      }
+    }
   }
   .single-wrapper-img {
     width: 100%;
