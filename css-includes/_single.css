@@ -1,0 +1,33 @@
+section .single-wrapper {
+  padding: 0 20% 30px 20%; }
+  section .single-wrapper img {
+    width: 100%;
+    height: auto; }
+  section .single-wrapper p img {
+    width: 100% !important;
+    height: auto; }
+section .single-wrapper-img {
+  width: 100%; }
+@media only screen and (max-width: 992px) {
+  section .single-wrapper {
+    padding: 0 10% 30px 10%; } }
+@media only screen and (max-width: 768px) {
+  section .single-wrapper {
+    padding: 0 15px 30px 15px; } }
+section .related-posts-header {
+  padding: 0 0 30px 15px; }
+section .related-posts .article-cards {
+  padding-bottom: 30px; }
+  section .related-posts .article-cards a {
+    text-decoration: none;
+    color: #000; }
+    section .related-posts .article-cards a .article-cards-styling {
+      background-color: #F5F5F5; }
+      section .related-posts .article-cards a .article-cards-styling h2 {
+        padding-top: 10px !important;
+        padding-bottom: 10px !important;
+        margin: 0 10px; }
+      section .related-posts .article-cards a .article-cards-styling p {
+        margin: 10px 0 10px 10px; }
+
+/*# sourceMappingURL=_single.css.map */

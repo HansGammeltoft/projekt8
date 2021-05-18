@@ -1,0 +1,54 @@
+section {
+  .breadcrumbs {
+
+  }
+  .single-wrapper {
+    padding: 0 20% 30px 20%;
+    img {
+      width: 100%;
+      height: auto;
+    }
+    p {
+      img {
+        width: 100% !important;
+        height: auto;
+      }
+    }
+  }
+  .single-wrapper-img {
+    width: 100%;
+  }
+  @media only screen and (max-width: 992px) {
+    .single-wrapper {
+      padding: 0 10% 30px 10%;
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    .single-wrapper {
+      padding: 0 15px 30px 15px;
+    }
+  }
+  .related-posts-header {
+    padding: 0 0 30px 15px;
+  }
+  .related-posts {
+    .article-cards {
+      padding-bottom: 30px;
+      a {
+        text-decoration: none;
+        color: #000;
+        .article-cards-styling {
+          background-color: #F5F5F5;
+          h2 {
+            padding-top: 10px !important;
+            padding-bottom: 10px !important;
+            margin: 0 10px;
+          }
+          p {
+            margin: 10px 0 10px 10px;
+          }
+        }
+      }
+    }
+  }
+}
