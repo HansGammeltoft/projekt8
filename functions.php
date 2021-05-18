@@ -76,3 +76,50 @@ add_filter( 'woocommerce_breadcrumb_home_url', 'woo_custom_breadrumb_home_url' )
 function woo_custom_breadrumb_home_url() {
     return '/larsenshundeartikler/shop/';
 }
+
+//related posts
+function example_cats_related_post() {
+
+    $post_id = get_the_ID();
+    $cat_ids = array();
+    $categories = get_the_category( $post_id );
+
+    if(!empty($categories) && !is_wp_error($categories)):
+        foreach ($categories as $category):
+            array_push($cat_ids, $category->term_id);
+        endforeach;
+    endif;
+
+    $current_post_type = get_post_type($post_id);
+
+    $query_args = array(
+        'category__in'   => $cat_ids,
+        'post_type'      => $current_post_type,
+        'post__not_in'    => array($post_id),
+        'posts_per_page'  => '3',
+     );
+
+    $related_cats_post = new WP_Query( $query_args );
+
+    if($related_cats_post->have_posts()):
+         while($related_cats_post->have_posts()): $related_cats_post->the_post(); ?>
+            <ul>
+                <li>
+                    <a href="<?php the_permalink(); ?>">
+                        <?php the_title(); ?>
+                    </a>
+                    <?php the_content(); ?>
+                </li>
+            </ul>
+        <?php endwhile;
+
+        // Restore original Post Data
+        wp_reset_postdata();
+     endif;
+
+}
+
+function mytheme_custom_excerpt_length( $length ) {
+    return 20;
+}
+add_filter( 'excerpt_length', 'mytheme_custom_excerpt_length', 999 );

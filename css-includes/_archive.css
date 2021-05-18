@@ -1,0 +1,55 @@
+section .top-archive .sidebar {
+  list-style-type: none; }
+  section .top-archive .sidebar li {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid #ddd 1px;
+    margin-bottom: 30px; }
+    section .top-archive .sidebar li p {
+      font-weight: 600;
+      width: 35%; }
+    section .top-archive .sidebar li .menu-side-menu-container {
+      width: 65%; }
+      section .top-archive .sidebar li .menu-side-menu-container .menu {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: space-between; }
+        section .top-archive .sidebar li .menu-side-menu-container .menu li {
+          border-bottom: none; }
+          section .top-archive .sidebar li .menu-side-menu-container .menu li a {
+            color: #000; }
+section .article-cards-wrapper .article-cards {
+  padding-bottom: 30px; }
+  section .article-cards-wrapper .article-cards a {
+    text-decoration: none;
+    color: #000; }
+    section .article-cards-wrapper .article-cards a .article-cards-styling {
+      background-color: #F5F5F5; }
+      section .article-cards-wrapper .article-cards a .article-cards-styling h2 {
+        padding-top: 10px !important;
+        padding-bottom: 10px !important;
+        margin: 0 10px; }
+      section .article-cards-wrapper .article-cards a .article-cards-styling p {
+        margin: 10px 0 10px 10px; }
+section .pagination {
+  padding-bottom: 30px;
+  color: #000; }
+  section .pagination .current {
+    background: #C2C2C2 !important;
+    border-radius: 3px; }
+  section .pagination .page-numbers, section .pagination .next {
+    padding: 0 10px;
+    margin: 5px;
+    background: #F5F5F5;
+    color: #000;
+    text-decoration: none; }
+  section .pagination .page-numbers:hover, section .pagination .page-numbers:hover {
+    background: #C2C2C2;
+    border-radius: 3px; }
+  section .pagination .page-numbers:active, section .pagination .page-numbers:active {
+    background: #C2C2C2;
+    border-radius: 3px; }
+
+/*# sourceMappingURL=_archive.css.map */

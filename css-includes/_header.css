@@ -4,7 +4,8 @@ header {
   width: 100% !important;
   height: 100%;
   z-index: 1;
-  background-color: #fff; }
+  background-color: #fff;
+  margin-bottom: 30px; }
   header .icon {
     display: none; }
   header .logo-wrapper .logo {

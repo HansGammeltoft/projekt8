@@ -17,7 +17,7 @@
       <p>USP text</p>
       <p>USP text</p>
     </div>
-    <header class="sticky-top  container d-flex col-12 col-sm-12 col-md-12 col-lg-12 d-flex">
+    <header class="sticky-top  container d-flex col-12 col-sm-12 col-md-12 col-lg-12">
 
       <div class="icon col-4 col-sm-4 d-md-none  d-flex justify-content-center">
         <a href="javascript:void(0);" class="col-6 col-sm-6 d-block d-md-none  d-flex justify-content-center" onclick="myFunction()">
