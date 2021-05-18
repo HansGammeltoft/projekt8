@@ -5,82 +5,174 @@ header {
   height: 100%;
   z-index: 1;
   background-color: #fff;
-  nav {
-    a {
-      .logo {
-        width: 100px;
-      }
+  .icon {
+    display: none;
+  }
+  .logo-wrapper {
+    .logo {
+      width: 100px;
     }
+  }
+  nav {
+    padding-top: 15px;
     .navmenu {
       display: flex;
       justify-content: space-around;
+      width: 100%;
       .mobile-searchbar {
           display: none;
       }
       .top_menu{
-        .menu-top-menu-container {
-          ul {
-            margin: 0;
-            padding: 0;
-            list-style-type: none;
-            display: flex;
-            justify-content: space-between;
+        width: 100%;
+        color: #000;
+          .menu-top-menu-container {
+            .menu {
+              padding: 0;
+              margin: 0;
+            }
           }
+        @media screen and (min-width: 768px) {
+          .menu-top-menu-container {
+            .menu {
+              list-style-type: none;
+              display: flex;
+              justify-content: space-around;
+              .menu-item {
+                a {
+                  color: #000;
+                  span:nth-child(2) {
+                    display: none;
+                  }
+                }
+              }
+              .menu-item-has-children {
+                .sub-menu-link {
+                }
+                .sub-menu {
+                  display: none;
+                  flex-wrap: wrap;
+                  list-style-type: none;
+                  padding: 0;
+                  margin: 0;
+                  position: relative;
+                  li {
+                  width: 100%;
+                  margin-top: 20px;
+                    a {
+                      position: absolute;
+                      width: 100%;
+                    }
+                  }
 
-          li {
-            float: left;
-          }
-
-          li a {
-            display: block;
-            text-decoration: none;
-          }
-
-          li a:hover {
+                }
+              }
+              .menu-item-has-children:hover > .sub-menu  {
+                display: flex;
+              }
+            }
           }
         }
       }
       .desktop-searchbar {
       }
     }
-    @media screen and (max-width: 768px) {
-      .navmenu {
-        display: none;
-      }
-    }
     .wishlist-cart {
+      display: flex;
+      justify-content: space-around;
+      width: 100%;
       margin: 0;
       padding: 0;
+
     }
   }
-  @media screen and (max-width: 768px) {
+}
+@media screen and (max-width: 768px) {
+  header {
+    flex-wrap: wrap;
+    .icon {
+      order: 1;
+      padding-top: 20px;
+    }
+    .logo-wrapper {
+      display: flex;
+      justify-content: center;
+      order: 2;
+    }
     nav {
-      a {
-        order: 1;
-      }
+      order: 4;
+      display: none;
       .navmenu {
-        order: 3;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        width: 100%;
           .mobile-searchbar {
-              display: block;
+            display: block;
+            width: 100%;
+            padding: 10px 0 0 0;
           }
           .top_menu {
+            display: block;
+            width: 100%;
             .menu-top-menu-container {
-              ul {
+              .menu {
+                list-style-type: none;
                 display: block;
               }
 
-              li {
+              .menu-item {
+                border-bottom: solid #ddd 1px;
+                padding: 10px 0;
                 width: 100%;
+                a {
+                  width: 100%;
+                  display: block;
+                  color: #000;
+                  text-decoration: none;
+                }
+                span:nth-child(2) {
+                  display: block;
+                }
               }
+              .menu-item-has-children {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                width: 100%;
+                .sub-menu-link {
+                  width: 100%;
+                  cursor: pointer;
+                  display: flex;
+                  justify-content: space-between;
+                  span:nth-child(2) {
+                    display: block;
+                  }
+                }
+                .sub-menu {
+                  padding: 0;
+                  margin: 0;
+                  list-style-type: none;
+                  width: 100%;
+                  li {
+                    border-bottom: none;
+                  }
+                }
+              }
+
             }
           }
           .desktop-searchbar {
             display: none;
           }
       }
-      .wishlist-cart {
-        order: 2;
-      }
+    }
+    .wishlist-cart {
+      order: 3;
+      padding-top: 20px;
     }
   }
+}
+
+.dgwt-wcas-search-wrapp {
+  max-width: none !important;
 }
