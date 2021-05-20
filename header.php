@@ -17,7 +17,7 @@
       <p>USP text</p>
       <p>USP text</p>
     </div>
-    <header class="sticky-top  container d-flex col-12 col-sm-12 col-md-12 col-lg-12">
+    <header class="sticky-top container d-flex col-12 col-sm-12 col-md-12 col-lg-12">
 
       <div class="icon col-4 col-sm-4 d-md-none  d-flex justify-content-center">
         <a href="javascript:void(0);" class="col-6 col-sm-6 d-block d-md-none  d-flex justify-content-center" onclick="myFunction()">
@@ -28,11 +28,11 @@
         </a>
       </div>
 
-      <a class="logo-wrapper col-4 col-sm-4 col-md-2 col-lg-2" href="/larsenshundeartikler">
+      <a class="logo-wrapper align-self-center col-4 col-sm-4 col-md-2 col-lg-1" href="/larsenshundeartikler">
         <img class="img-responsive logo" src="/larsenshundeartikler/wp-content/uploads/2021/05/logo-header.png" alt="">
       </a>
 
-      <nav id="myLinks" class="col-12 col-sm-12 col-md-9 col-lg-9 container">
+      <nav id="myLinks" class="col-12 col-sm-12 col-md-9 col-lg-10 align-self-center container">
         <div class="navmenu ">
           <div class="mobile-searchbar" >
             <?php echo do_shortcode('[fibosearch]'); ?>
@@ -42,7 +42,7 @@
               wp_nav_menu(
                 array(
                   'theme_location' => 'top-menu',
-                  //'after' => '<a class="link-arrowdown" href="?op=1"><p class="arrowdown">&#9660;</p><a>'
+                  'after' => '</a><a class="sub-menu-link"><div>&#9660;</div>'
                 )
               );
             ?>
@@ -53,7 +53,7 @@
         </div>
       </nav>
 
-      <div class="wishlist-cart col-4 col-sm-4 col-md-1 col-lg-1 d-flex  d-md-flex d-flex justify-content-around">
+      <div class="wishlist-cart col-4 col-sm-4 col-md-1 col-lg-1 align-self-center d-md-flex d-flex justify-content-around">
         <a href="#"><i class="fas fa-heart"></i></a>
         <a href="/larsenshundeartikler/cart/"><i class="fas fa-shopping-cart"></i></a>
       </div>

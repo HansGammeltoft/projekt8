@@ -29,11 +29,11 @@ add_theme_support('post-thumbnails');
 //billede størrelser på thumbnails, wordpress autoscalerer til en bestemt størrelse
 add_image_size('post_image', 1100, 750, false);
 
-//tilføj sidebar - produktlist
+//tilføj sidebar - shop produktliste
 register_sidebar(
     array(
-      'name' => 'Page Sidebar',
-      'id' => 'page-sidebar',
+      'name' => 'Shop Sidebar',
+      'id' => 'shop-sidebar',
       'class' => '',
       'before_title' => '<p>',
       'after_title' => '</p>'
